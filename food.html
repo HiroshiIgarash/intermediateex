@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>お料理-石井花壇 | 温海温泉旅館【公式サイト】</title>
+    <meta name="descriotion" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="stylesheet" href="css/aos.css">
+  </head>
+<body>
+  <header class="header white">
+    <h1><a href="index.html"><img src="img/sub-header-logo.png" alt="石井花壇"></a></h1>
+    <nav class="globalMenuSp">
+      <ul class="header--list">
+        <li><a href="room.html">お部屋</a></li>
+        <li><a href="food.html">お料理</a></li>
+        <li><a href="onsen.html">温泉</a></li>
+      </ul>
+    </nav>
+
+    <div class="header--btn">
+      <a class="modal-open button-link">宿泊予約</a>
+    </div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- モーダル -->
+  <div id="modal-content">
+    <h2>宿泊予約</h2>
+    <form action="#">
+      <div>
+        <label for="name">お名前</label>
+        <input type="text" id="name" name="your-name" placeholder=" 例：石井正悟">
+      </div>
+      <div>
+        <label for="name">メールアドレス</label>
+        <input type="email" id="email" name="your-email" placeholder="例：Example@example.com">
+      </div>
+      
+      <div>
+        <label for="plan">ご希望プラン（空いているプランのみ表示されます）</label>
+        <select name="plan" required>
+          <option value="" style="display: none;">プランを選択してください</option>
+          <option value="懐石プラン">①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+          <option value="特別宿泊プラン">②平日に優雅に楽しむ、特別宿泊プラン</option>
+          <option value="ファミリープラン">③絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="date">日時選択</label>
+        <input type="text" class="flatpickr" name="your-date" placeholder="日時を選択してください" readonly="readonly">
+      </div>
+
+      <input type="submit" value="送信する">
+
+    </form>
+    <p><a id="modal-close" class="button-link">×</a></p>
+  </div>
+
+  <div class="header-img food">
+    <p>お料理</p>
+  </div>
+
+  <main class="food--main wrapper">
+    <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <!-- 1つめ -->
+      <li itemprop="itemListElement" itemscope
+          itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="index.html">
+            <span itemprop="name">トップ</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </li>
+    
+      <!-- 2つめ -->
+      <li itemprop="itemListElement" itemscope
+          itemtype="https://schema.org/ListItem">
+        <a itemprop="item">
+            <span itemprop="name">お料理</span>
+        </a>
+        <meta itemprop="position" content="2" />
+      </li>
+    </ol>
+
+    <p data-aos="fade-up">地元熱海の市場で仕入れた食材のみを使った食材をふんだんに使い、<br>
+      大将の技が光る「熱海料理」<br>
+      四季ごと、日ごとに変化する味わいを、どうぞご堪能ください。</p>
+      
+    <ul class="food--list">     
+      <li>
+        <div class="food--list-txt">
+          <img data-aos="fade-up" src="img/menu01.jpg" alt="懐石料理">
+          <h2 data-aos="fade-up">地元食材にこだわった会席料理</h2>
+          <p data-aos="fade-up">みずみずしくほのかに甘い野菜、新鮮で味に深みがある魚介類、肉類。<br>
+            旬の素材をそのままに生かす、経験に裏打ちされた確かな技。<br>
+            四季ごと、日ごとに変化する味わいを、どうぞご堪能ください。</p>
+        </div>
+      </li>
+      <li>
+        <div class="food--list-txt">
+          <img data-aos="fade-up" src="img/menu02.jpg" alt="熱海の魚">
+          <h2 data-aos="fade-up">熱海の漁港で目利きの品を</h2>
+          <p data-aos="fade-up">石井花壇でお出しする料理はすべて料理長である大将の目利きで、<br>
+            熱海の魚市場でその日のうちに仕入れたものを使用しております。<br>
+            日本海の宝玉を十分にお楽しみください。</p>
+        </div>
+      </li>
+      <li>
+        <div class="food--list-txt">
+          <img data-aos="fade-up" src="img/menu03.jpg" alt="職人">
+          <h2 data-aos="fade-up">食材が一流、職人も一流</h2>
+          <p data-aos="fade-up">石井花壇の料理人は料亭で20年経験を積んだものばかり。<br>
+            その時の最も旬な食材を、最高の調理でお届けします。<br>
+            また、お料理への細かいご要望にもお答えできますので、<br>
+            お気軽にお申し付けください。</p>
+        </div>
+      </li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+  <section class="footer-menu">
+    <ul class="footer-menu-list">
+      <li><a href="room.html">お部屋</a></li>
+      <li><a href="food.html">お料理</a></li>
+      <li><a href="onsen.html">温泉</a></li>
+    </ul>
+    <img src="img/footer-logo.png" alt="">
+    <p>〒000-0000　　<span>山形県鶴岡市xxxxxxxxxxx</span></p>
+    <p>TEL.000-0000-0000　FAX.00-0000-0000</p>
+  </section>
+
+  <footer class="footer">
+    <small>Copyright © 石井花壇 All Rights Reserved.</small>
+  </footer>
+  <script src="js/aos.js"></script>
+</body>
+</html>
